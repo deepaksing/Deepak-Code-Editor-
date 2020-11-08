@@ -1,0 +1,72 @@
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <title>Hello World!</title>
+        <link rel="stylesheet" href="index.css">
+        <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />
+        <link rel="stylesheet" href="menu.css">
+        <link rel="stylesheet" href="folder.css">
+        <script src="ace.js"></script>
+        <script src="mode-c_cpp.js"></script>
+        <script src="theme-monokai.js"></script>
+
+        <style type="text/css" media="screen">
+            
+        </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="titlebar titlestyle">
+            <div class="windowtitle preventSelect drag">DEEPAK</div>
+            <div class="windowControl preventSelect">
+                <button id="minimise">
+                    <div class="min"></div>
+                </button>
+                <button id="maximise">
+                    <div class="max"></div>
+                </button>
+                <button id="quit">
+                    <div class="qui"></div>
+                </button>
+            </div>
+        </div>
+    
+
+        
+        <div id="editor"></div>            
+        
+        <textarea id="code" style="
+        min-width: 100%;
+        min-height: 100%;">
+    </textarea>
+        
+    
+
+
+        <!-- <div id="editor">function foo(items) {
+            var x = "All this is syntax highlighted";
+            return x;
+        }</div>    -->
+</div>
+    <script src="./main.js"></script>
+    <script src="../lib//TitleBar.js"></script>
+    <script src="ace.js" type="text/javascript" charset="utf-8"></script>
+    <script>
+        require('./renderer.js');
+    </script>
+<script>
+    var editor = ace.edit("editor");
+    editor.setTheme("ace/theme/monokai");
+    editor.session.setMode("ace/mode/c_cpp");
+</script>
+</body>
+
+</html>

@@ -1,0 +1,135 @@
+body {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+}
+
+body *{
+  box-sizing: border-box;
+}
+
+.container {
+  background-color: #1E1E1E;
+  height: 100%;
+  padding: 0;
+  display: grid;
+  min-width: 100%;
+  grid-template-rows: auto 1fr;
+  transition: 0.5s all ease-in-out;
+}
+
+.windowtitle  {
+  padding: 10px;
+  padding-top: 5px;
+  height: auto;
+  display: inline-block;
+  font-family: montserrat;
+  margin: 0;
+  transition: 0.5s all ease-in-out;
+}
+
+.windowControl {
+  float: right;
+  display: grid;
+  grid-template-columns: .5fr .5fr .5fr;
+  width: 100px;
+  transition: 0.5s all ease-in-out;
+}
+
+.windowControl button {
+  outline: 0;
+  border: 0;
+  background: none;
+  color: white;
+  transition: 0.5s all ease-in-out;
+}
+
+.windowControl button:hover {
+  opacity: 0.6;
+  transition: 0.5s all ease-in-out;
+}
+
+.min {
+  background: #FF5F56;
+  height: 13px;
+  width: 13px;
+  border-radius: 50%;
+  transition: 0.5s all ease-in-out;
+}
+
+.max {
+  background: #FFBD2E;
+  height: 13px;
+  width: 13px;
+  border-radius: 50%;
+  transition: 0.5s all ease-in-out;
+}
+
+.qui {
+  background: #27C93F;
+  height: 13px;
+  width: 13px;
+  border-radius: 50%;
+  transition: 0.5s all ease-in-out;
+}
+
+.titlestyle {
+  background: #1e1e1e9c;
+  color: #fff;
+  font-size: 10pt;
+  transition: 0.5s all ease-in-out;
+}
+
+.preventSelect {
+  user-select: none;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  transition: 0.5s all ease-in-out;
+}
+
+.drag {
+  -webkit-app-region: drag;
+  transition: 0.5s all ease-in-out;
+}
+
+.titlebar {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  transition: 0.5s all ease-in-out;
+}
+#code  {
+  background-color: #2e2e2e;
+  border: none;
+  overflow: auto;
+  outline: none;
+  text-decoration: none;
+  list-style: none;
+  color: rgb(58, 189, 171);
+  caret-color: #faae0a;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  font-size: 19px;
+  resize: none;
+
+
+}
+
+#editor  {
+  background-color: #1E1E1E;
+  border: none;
+  overflow: auto;
+  outline: none;
+  text-decoration: none;
+  list-style: none;
+  color: rgb(58, 189, 171);
+  caret-color: #faae0a;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  font-size: 19px;
+  resize: none;
+
+
+}
+

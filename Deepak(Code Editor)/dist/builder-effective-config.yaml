@@ -1,0 +1,12 @@
+directories:
+  output: dist
+  buildResources: build
+appId: deepak
+win:
+  target:
+    - nsis
+nsis:
+  uninstallDisplayName: CPU Monitor
+  oneClick: false
+  allowToChangeInstallationDirectory: true
+electronVersion: 10.1.5

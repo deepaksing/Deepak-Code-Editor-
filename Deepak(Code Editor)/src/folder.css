@@ -1,0 +1,82 @@
+.body {
+    background-color: #1c1f23;
+}
+
+.codingscreen {
+    display: grid;
+    z-index: 5;
+    grid-template-columns: auto 1fr auto;
+}
+
+.explorer {
+    width: 215px;
+    height: max-content;
+}
+
+.exps {
+    background-color: #2d3239;
+}
+
+.filescont {
+    color: #fff;
+    font-family: century gothic;
+    white-space: nowrap;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    max-height: 250px;
+}
+
+.folderf {
+    background-color: #1c1f23;
+    margin: 5px;
+    color: white;
+    border-radius: 4px;
+    white-space: nowrap;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.foldert {
+    font-size: 15px;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 1fr auto auto;
+}
+
+#foldername {
+    display: inline-block;
+}
+
+#changefolder, #syncfile {
+    display: inline-block;
+    color: #fff;
+    border: 0;
+    border-radius: 3px;
+    padding: 5px;
+    cursor: pointer;
+    font-size:9px;
+    outline: 0;
+}
+
+#syncfile {
+    font-size:12px;
+    margin-right: 10px;
+    background: transparent;
+}
+
+#syncfile:hover {
+    background: #262e2f;
+}
+
+#changefolder {
+    letter-spacing: 1.1;
+    background: linear-gradient(#343f4c, #2b3038);
+}
+
+.expof {
+    display: flex;
+    overflow: scroll;
+    flex-direction: column;
+    max-height: 350px;
+}
+
